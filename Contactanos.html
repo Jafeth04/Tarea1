@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contáctanos</title>
+  <link rel="stylesheet" href="Contactanos.css">
+</head>
+<body>
+  <header class="site-header">
+    
+    <div class="container">
+      <h1>Contáctanos</h1>
+      <p>Estamos aquí para ayudarte, no dudes en escribirnos.</p>
+    </div>
+
+  </header>
+
+  <main class="container">
+    <section class="info">
+      <h2>Información de contacto</h2>
+      <p><strong>📍 Dirección:</strong> Managua, Nicaragua</p>
+      <p><strong>📞 Teléfono:</strong> +505 2222-3333</p>
+      <p><strong>✉️ Correo:</strong> contacto@nuestraorg.org</p>
+      <p><strong>⏰ Horario:</strong> Lunes a Viernes, 8:00 am – 5:00 pm</p>
+    </section>
+
+    <section class="formulario">
+      <h2>Envíanos un mensaje</h2>
+      <form onsubmit="event.preventDefault(); alert('Mensaje enviado (simulado)')">
+        <label>Nombre
+          <input type="text" required>
+        </label>
+        <label>Correo
+          <input type="email" required>
+        </label>
+        <label>Mensaje
+          <textarea rows="5" required></textarea>
+        </label>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Nuestra Organización — Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
