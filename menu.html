@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="menu.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Casimiro</title>
+</head>
+<body>
+  <div class="card">
+    <h1>Bienvenido a Café Casimiro ☕</h1>
+    <label for="bebida">Seleccioná tu bebida caliente:</label>
+    <select id="bebida">
+      <option value="Café negro">Café negro</option>
+      <option value="Capuchino">Capuchino</option>
+      <option value="Latte">Latte</option>
+      <option value="Chocolate caliente">Chocolate caliente</option>
+      <option value="Té de hierbas">Té de hierbas</option>
+    </select>
+    <button onclick="confirmar()">Confirmar</button>
+    <div class="resultado" id="resultado"></div>
+  </div>
+
+  <script>
+    function confirmar() {
+      let bebida = document.getElementById("bebida").value;
+      document.getElementById("resultado").textContent = "Has elegido: " + bebida + " ✅";
+    }
+  </script>
+</body>
+</html>
